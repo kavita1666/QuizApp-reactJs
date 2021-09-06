@@ -99,13 +99,13 @@ export class Quiz extends Component {
         })
     }
 
-    //after all questions over
+    //here it handles the checkbox submit
     finishHandler = () => {
         const { userAnswer, answer, score ,multiAnswer,currentIndex} = this.state;
 
-        console.log(answer,answer.length);
-        console.log(multiAnswer,multiAnswer.length);
-        let flag=false;
+//         console.log(answer,answer.length);
+//         console.log(multiAnswer,multiAnswer.length);
+        
         if(quizDB[currentIndex].type==="checkbox")
         {
             // check answer
@@ -119,36 +119,13 @@ export class Quiz extends Component {
                     currentIndex: this.state.currentIndex + 1,
                     })
             }
-            // this.setState({
-            //     multiAnswer: [],
-            //     currentIndex: this.state.currentIndex + 1,
-            //   });
             
-            // if(flag)
-            // {
-            //     this.setState({
-            //     score: this.state.score + 1
-            //     })
-            // }
             if (this.state.currentIndex === quizDB.length - 1) {
                 this.setState({
                     quizEnd: true
                 })
             }
         }
-
-        //before going to next Ques handle the score
-        // if (userAnswer === answer) {
-        //     this.setState({
-        //         score: this.state.score + 1
-        //     })
-        // }
-
-        // if (this.state.currentIndex === quizDB.length - 1) {
-        //     this.setState({
-        //         quizEnd: true
-        //     })
-        // }
     }
 
     //return

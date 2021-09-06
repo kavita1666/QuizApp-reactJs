@@ -51,8 +51,7 @@ function Login(){
                 <input required type="email" name="email" value={userInput.email} onChange={handleOnChange}   placeholder="Enter Your Email id" ></input>
                 <input required type="password" name="password" value={userInput.password} onChange={handleOnChange}   placeholder="Enter Your Password" ></input>
                 <button className="button" >Login</button>
-                <div>or</div>
-                <button className="button" >Register</button>
+                
             </form>
         </div>
     )

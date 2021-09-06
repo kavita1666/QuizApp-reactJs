@@ -32,9 +32,9 @@ export const quizDB = [
             'Computer Style Sheet', 
             'Cascading Style Sheet', 
             'Colorful Style Sheet', 
-            'Cascading Style Sheet', 
+            'Computing Style Sheet', 
         ],
-        answer:'Cascading Style Sheet', 
+        answer:['Computer Style Sheet','Cascading Style Sheet',], 
         type: "checkbox",
   
     },
